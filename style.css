@@ -836,10 +836,6 @@ section{
     .footer{
         padding: 40px 5% 20px;
     }
-
-    .footer-container{
-        gap: 30px;
-    }
 }
 
 @media (max-width:480px) {
