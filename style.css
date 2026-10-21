@@ -1027,16 +1027,16 @@ section{
 
     /* About styling */
     .about {
-        padding: 65px 6%;
+        padding: 55px 5%;
     }
 
     .about-container {
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        gap: 20px;
     }
 
     .about-image img {
-        height: 400px;
+        height: 250px;
     }
 
     .about-content h2 {
