@@ -1061,10 +1061,136 @@ section{
     
 
     /* Show overlay always on mobile so people can read it */
-    .porfolio-overlay{
-        transform: translateY(0);
-        background: linear-gradient(to top, rgba(0,31,63,0.85), rgba(0,31,63,0.3));
+    /* PROJECT CARDS - MOBILE FIX */
+
+.portfolio-item {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #001f3f;
+}
+
+/* Project image */
+
+.portfolio-item img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+/* Dark background behind project text */
+
+.portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 22px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.98) 0%,
+        rgba(0, 31, 63, 0.93) 55%,
+        rgba(0, 31, 63, 0.15) 100%
+    );
+    color: #ffffff;
+    text-align: left;
+    transform: none;
+}
+
+/* Project title */
+
+.portfolio-overlay h4 {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* Project description */
+
+.portfolio-overlay p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    opacity: 1;
+}
+
+/* Technology labels */
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 5px 0 15px;
+}
+
+.project-tech span {
+    color: #ffffff;
+    background: #003b75;
+    border: 1px solid #66b2ff;
+    border-radius: 5px;
+    padding: 6px 9px;
+    font-size: 12px;
+}
+
+/* Project buttons */
+
+.portfolio-overlay .btn-view {
+    display: inline-block;
+    padding: 11px 16px;
+    margin-top: 5px;
+    background: #0066ff;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+
+    .portfolio {
+        padding: 60px 5%;
     }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .portfolio-item {
+        height: 420px;
+    }
+
+    .portfolio-overlay {
+        padding: 20px;
+    }
+
+    .portfolio-overlay h4 {
+        font-size: 19px;
+    }
+
+    .portfolio-overlay p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .project-tech span {
+        font-size: 11px;
+    }
+}
 
     /*  CONTACT STYLING */
     .contact{
