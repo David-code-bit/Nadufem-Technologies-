@@ -604,6 +604,77 @@ section{
     100%{transform: scale(1);}
 }
 
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 10px 0 15px;
+}
+
+.project-tech span {
+    display: inline-block;
+    padding: 5px 9px;
+    border: 1px solid #66b2ff;
+    border-radius: 4px;
+    color: #ffffff;
+    background: rgba(0, 102, 255, 0.2);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* PROJECT STATUS */
+
+.project-status {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 6px 10px;
+    border: 1px solid #66b2ff;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+/* PROJECT BUTTON */
+
+.portfolio-overlay .btn-view {
+    align-self: flex-start;
+    margin-top: 5px;
+    padding: 9px 15px;
+    background: #0066ff;
+    color: #ffffff;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.portfolio-overlay .btn-view:hover {
+    background: #004ecc;
+}
+
+/* CONTACT CALL TO ACTION */
+
+.projects-cta {
+    max-width: 700px;
+    margin: 55px auto 0;
+    padding: 30px 20px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.projects-cta h3 {
+    margin-bottom: 12px;
+    color: #001f3f;
+    font-size: 24px;
+}
+
+.projects-cta p {
+    margin-bottom: 20px;
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.8;
+}
 
 /* CONTACT STYLING */
 .contact{
@@ -970,6 +1041,24 @@ section{
     .portfolio-item{
         height: 250px;
     }
+
+    .project-tech {
+        gap: 5px;
+    }
+
+    .project-tech span {
+        font-size: 10px;
+    }
+
+    .projects-cta {
+        margin-top: 35px;
+        padding: 25px 15px;
+    }
+
+    .projects-cta h3 {
+        font-size: 21px;
+    }
+    
 
     /* Show overlay always on mobile so people can read it */
     .porfolio-overlay{
