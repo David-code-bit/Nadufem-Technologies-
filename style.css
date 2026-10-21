@@ -275,7 +275,7 @@ section{
 }
 
 .about-content h3 {
-    color: #b8860b;
+    color: #007bff;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -292,7 +292,7 @@ section{
 }
 
 .about-content h4 {
-    color: #b8860b;
+    color: #007bff;
     font-size: 19px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -313,7 +313,7 @@ section{
 
 .about-content .button-primary {
     display: inline-block;
-    background: #b8860b;
+    background: #007bff;
     color: #ffffff;
     padding: 14px 28px;
     margin-top: 10px;
@@ -321,7 +321,7 @@ section{
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
-    border: 2px solid blue;
+    border: 2px solid #007bff;
     transition: all 0.3s ease;
 }
 
@@ -348,7 +348,7 @@ section{
 }
 
 .skills .section-tag {
-    color: #b8860b;
+    color: #007bff;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -391,7 +391,7 @@ section{
 
 .skill-card i {
     font-size: 42px;
-    color: #b8860b;
+    color: #007bff;
     margin-bottom: 18px;
 }
 
